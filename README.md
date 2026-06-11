@@ -54,7 +54,7 @@ wordtrainer/
    `public_html/`), сохранив структуру папок `ru/`, `en/`, `css/`, `js/`, `data/`.
 3. Откройте домен — корень перенаправит на нужный язык. PHP и БД не нужны.
 
-Перед публикацией замените `example.com` на ваш домен в: `index.html`,
+Перед публикацией замените `english-trenazher.ru` на ваш домен в: `index.html`,
 `ru/index.html`, `en/index.html` (canonical, og:url, hreflang), `robots.txt`,
 `sitemap.xml`. После публикации добавьте сайт и `sitemap.xml` в Яндекс.Вебмастер
 и Google Search Console.
@@ -73,11 +73,11 @@ wordtrainer/
 
 **Что заменить перед публикацией:**
 
-- `example.com` → ваш домен во всех HTML, `sitemap.xml`.
+- `english-trenazher.ru` → ваш домен во всех HTML, `sitemap.xml`.
 - YouTube: `href="#"` в подвалах (`ru/index.html`, `en/index.html`, посадочные)
   → ссылка на канал. Туда же стоит добавить `"sameAs": ["<канал>"]` в блок
   `Organization` (в `ru/index.html` и `en/index.html`).
-- `hello@example.com` на страницах «О нас» → ваш контактный email.
+- `hello@english-trenazher.ru` на страницах «О нас» → ваш контактный email.
 
 ## Производительность и нагрузка
 
