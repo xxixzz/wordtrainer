@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Тренажёр английских слов — учим слова A1–C1 онлайн бесплатно</title>
+  <meta name="description" content="Бесплатный онлайн-тренажёр английских слов по уровням A1, A2, B1, B2, C1. Слово и 4 варианта перевода, два направления, раунды по 10 слов, работа над ошибками, история ответов и тест на определение уровня." />
+  <meta name="keywords" content="английские слова, тренажёр слов, учить английский, перевод слов, A1 A2 B1 B2 C1, тест на уровень английского, словарный тренажёр" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/ru/" />
+  <link rel="alternate" hreflang="ru" href="https://example.com/ru/" />
+  <link rel="alternate" hreflang="en" href="https://example.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://example.com/ru/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Тренажёр английских слов A1–C1" />
+  <meta property="og:description" content="Учите английские слова в формате викторины. Уровни A1–C1, два направления, раунды, работа над ошибками, тест на уровень." />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:url" content="https://example.com/ru/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Тренажёр английских слов A1–C1" />
+  <meta name="twitter:description" content="Учите английские слова в формате викторины. Уровни A1–C1, тест на уровень." />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Тренажёр английских слов",
+    "description": "Онлайн-тренажёр английских слов по уровням A1–C1 в формате викторины с 4 вариантами ответа.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web",
+    "inLanguage": "ru",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "RUB" }
+  }
+  </script>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@graph": [
+    { "@type": "WebSite", "@id": "https://example.com/#website", "url": "https://example.com/", "name": "WordTrainer", "inLanguage": "ru" },
+    { "@type": "Organization", "@id": "https://example.com/#org", "name": "WordTrainer", "url": "https://example.com/", "logo": "https://example.com/icon.svg" }
+  ] }
+  </script>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("wordtrainer_theme");
+        if (!t) { t = (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ? "light" : "dark"; }
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#quiz">Перейти к тренажёру</a>
+
+  <header class="app-header">
+    <a class="lang-switch" href="../en/" hreflang="en" aria-label="Switch to English">EN</a>
+    <button class="theme-btn" id="theme-btn" type="button" aria-label="Переключить тему" title="Переключить тему">🌙</button>
+    <h1 class="logo">📚 Word<span>Trainer</span></h1>
+    <p class="tagline">Учим английские слова — A1 до C1</p>
+  </header>
+
+  <main class="container">
+    <section class="controls" aria-label="Настройки">
+      <div class="control-group">
+        <span class="control-label">Уровень</span>
+        <div class="level-switch" role="group" aria-label="Выбор уровня">
+          <button class="level-btn is-active" data-level="A1">A1</button>
+          <button class="level-btn" data-level="A2">A2</button>
+          <button class="level-btn" data-level="B1">B1</button>
+          <button class="level-btn" data-level="B2">B2</button>
+          <button class="level-btn" data-level="C1">C1</button>
+        </div>
+      </div>
+      <div class="control-group">
+        <span class="control-label">Направление</span>
+        <div class="dir-switch" role="group" aria-label="Направление перевода">
+          <button class="dir-btn is-active" data-dir="en-ru">EN → RU</button>
+          <button class="dir-btn" data-dir="ru-en">RU → EN</button>
+        </div>
+      </div>
+    </section>
+
+    <nav class="modes" aria-label="Режимы">
+      <button class="mode-btn is-active" data-mode="infinite">📖 Практика</button>
+      <button class="mode-btn" data-mode="mistakes">🔁 Работа над ошибками <span class="badge" id="mistakes-count">0</span></button>
+      <button class="mode-btn" data-mode="test">🎓 Узнать уровень</button>
+    </nav>
+
+    <div class="suggest is-tip" id="suggest">
+      <span id="suggest-text"></span>
+      <span class="suggest-actions">
+        <button id="suggest-accept" class="suggest-yes">Перейти</button>
+        <button id="suggest-dismiss" class="suggest-no">Не сейчас</button>
+      </span>
+    </div>
+
+    <section class="stats" aria-label="Статистика" id="stats-panel">
+      <div class="stat"><span class="stat-value" id="stat-total">0</span><span class="stat-name">Всего</span></div>
+      <div class="stat"><span class="stat-value stat-correct" id="stat-correct">0</span><span class="stat-name">Верно</span></div>
+      <div class="stat"><span class="stat-value stat-wrong" id="stat-wrong">0</span><span class="stat-name">Ошибок</span></div>
+      <div class="stat"><span class="stat-value" id="stat-accuracy">—</span><span class="stat-name">Точность</span></div>
+      <div class="stat"><span class="stat-value stat-streak" id="stat-streak">0</span><span class="stat-name">Серия 🔥</span></div>
+    </section>
+
+    <section class="quiz" id="quiz" aria-live="polite">
+      <div class="round-progress" id="round-progress">
+        <div class="round-bar"><div class="round-bar-fill" id="round-bar-fill"></div></div>
+        <span class="round-count" id="round-count">0 / 10</span>
+      </div>
+      <p class="quiz-prompt" id="quiz-prompt">Переведите слово:</p>
+      <h2 class="quiz-word" id="quiz-word">—</h2>
+      <div class="options" id="options"></div>
+      <button class="next-btn" id="next-btn" hidden>Дальше →</button>
+    </section>
+
+    <section class="summary" id="summary" hidden>
+      <div class="summary-emoji" id="summary-emoji">🎉</div>
+      <h2 class="summary-title" id="summary-title">Раунд завершён!</h2>
+      <div class="summary-score"><span id="summary-correct">0</span> / <span id="summary-total">10</span></div>
+      <p class="summary-line" id="summary-acc">Точность: 0%</p>
+      <p class="summary-line" id="summary-streak">Серия: 0 🔥</p>
+      <div class="summary-actions">
+        <button class="next-btn" id="summary-again">Ещё 10 слов →</button>
+        <button class="reset-btn" id="summary-level">Сменить уровень</button>
+      </div>
+    </section>
+
+    <section class="testbox" id="testbox" hidden>
+      <div id="test-intro">
+        <h2 class="testbox-title">🎓 Тест на уровень</h2>
+        <p class="testbox-desc">Адаптивный тест: слова идут от простых (A1) к сложным (C1). Как только станет трудно — тест остановится сам. Это займёт 1–2 минуты.</p>
+        <button class="next-btn" id="test-start">Начать тест</button>
+      </div>
+      <div id="test-progress" hidden>
+        <p class="test-meta"><span id="test-level-label">A1</span> · вопрос <span id="test-q-num">1</span></p>
+        <div class="test-bar"><div class="test-bar-fill" id="test-bar-fill"></div></div>
+        <p class="quiz-prompt" id="test-prompt">Переведите слово:</p>
+        <h2 class="quiz-word" id="test-word">—</h2>
+        <div class="options" id="test-options"></div>
+      </div>
+      <div id="test-result" hidden>
+        <h2 class="testbox-title">Ваш уровень: <span id="test-level-result">—</span></h2>
+        <div id="test-breakdown" class="test-breakdown"></div>
+        <div class="test-result-actions">
+          <button class="next-btn" id="test-use-level">Заниматься на этом уровне</button>
+          <button class="reset-btn" id="test-retry">Пройти заново</button>
+        </div>
+      </div>
+    </section>
+
+    <p class="hint" id="hint">Подсказка: отвечайте клавишами <kbd>1</kbd>–<kbd>4</kbd>, <kbd>Enter</kbd> / <kbd>Пробел</kbd> — следующее слово.</p>
+
+    <section class="history" id="history-section">
+      <div class="history-head">
+        <h2 class="history-title">История ответов</h2>
+        <button class="reset-btn small" id="reset-btn">Сбросить</button>
+      </div>
+      <ul class="history-list" id="history-list">
+        <li class="history-empty">Здесь появятся ваши ответы.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <nav class="footer-nav" aria-label="Подвал">
+      <a href="about/">О нас</a>
+      <a href="level/a1/">Уровни</a>
+      <a href="../en/" hreflang="en">English version</a>
+    </nav>
+    <div class="footer-social">
+      <a class="social" href="#" rel="noopener" target="_blank" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.5 12 4.5 12 4.5s-7 0-8.9.6A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.6 8.9.6 8.9.6s7 0 8.9-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23.5 12 31 31 0 0 0 23 7.2zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg>
+        YouTube
+      </a>
+    </div>
+    <p class="footer-note">Бесплатный тренажёр английской лексики по уровням CEFR (A1–C1). Прогресс и история сохраняются в вашем браузере.</p>
+  </footer>
+
+  <script src="../data/a1.js"></script>
+  <script src="../data/a2.js"></script>
+  <script src="../data/b1.js"></script>
+  <script src="../data/b2.js"></script>
+  <script src="../data/c1.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

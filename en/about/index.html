@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>About — WordTrainer, English ⇄ Russian vocabulary trainer</title>
+  <meta name="description" content="WordTrainer is a free online English ⇄ Russian vocabulary trainer (A1–C1). About the project, how it works, FAQ and contact." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/en/about/" />
+  <link rel="alternate" hreflang="en" href="https://example.com/en/about/" />
+  <link rel="alternate" hreflang="ru" href="https://example.com/ru/about/" />
+  <link rel="alternate" hreflang="x-default" href="https://example.com/ru/about/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About — WordTrainer" />
+  <meta property="og:description" content="A free English ⇄ Russian vocabulary trainer (A1–C1). About, FAQ and contact." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://example.com/en/about/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>" />
+
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://example.com/en/" },
+    { "@type": "ListItem", "position": 2, "name": "About", "item": "https://example.com/en/about/" }
+  ] }
+  </script>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "Is the trainer free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, completely free and no sign-up required." } },
+    { "@type": "Question", "name": "Do I need to install anything?", "acceptedAnswer": { "@type": "Answer", "text": "No, it runs right in your browser. You can optionally install it as an app (PWA) on your phone." } },
+    { "@type": "Question", "name": "How many words are there?", "acceptedAnswer": { "@type": "Answer", "text": "About 4,600 English words grouped by CEFR levels from A1 to C1." } },
+    { "@type": "Question", "name": "Is my progress saved?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, your stats and answer history are saved in your browser. Cross-device sync is coming later." } },
+    { "@type": "Question", "name": "How do I find my level?", "acceptedAnswer": { "@type": "Answer", "text": "Use the adaptive level test: words go from easy to hard and estimate your level in 1–2 minutes." } }
+  ] }
+  </script>
+
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script>
+    (function () { try { var t = localStorage.getItem("wordtrainer_theme"); if (!t) { t = (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ? "light" : "dark"; } document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();
+  </script>
+</head>
+<body>
+  <header class="app-header">
+    <a class="lang-switch" href="../../ru/about/" hreflang="ru" aria-label="Переключиться на русский">RU</a>
+    <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle theme">🌙</button>
+    <h1 class="logo">📚 Word<span>Trainer</span></h1>
+    <p class="tagline">English ⇄ Russian vocabulary — A1 to C1</p>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a> / About
+    </nav>
+
+    <article class="prose">
+      <h1>About WordTrainer</h1>
+      <p>WordTrainer is a free online vocabulary trainer. The goal is simple: help you learn
+        and retain words in small, painless sessions — for free. You see a word and pick the
+        correct translation out of four options, which builds memory faster than reading lists.</p>
+      <p>The trainer has about 4,600 words grouped by <strong>CEFR levels — A1 to C1</strong>.
+        You can study in both directions (English → Russian and back), review your mistakes,
+        play 10-word rounds, and estimate your level with an adaptive test.</p>
+
+      <h2>Why it's built this way</h2>
+      <p>We deliberately kept it light and fast: it runs right in your browser, needs no
+        sign-up, and your progress is saved on your device. After the first visit, the page
+        even opens offline.</p>
+
+      <h2>FAQ</h2>
+      <dl class="faq">
+        <dt>Is the trainer free?</dt>
+        <dd>Yes, completely free and no sign-up required.</dd>
+        <dt>Do I need to install anything?</dt>
+        <dd>No, it runs in the browser. You can optionally install it as an app (PWA) on your phone.</dd>
+        <dt>How many words are there?</dt>
+        <dd>About 4,600 English words across CEFR levels A1 to C1.</dd>
+        <dt>Is my progress saved?</dt>
+        <dd>Yes, stats and history are saved in your browser. Cross-device sync is coming later.</dd>
+        <dt>How do I find my level?</dt>
+        <dd>Take the adaptive level test — it estimates your level in 1–2 minutes.</dd>
+      </dl>
+
+      <h2>Contact</h2>
+      <p>Questions and feedback: <a class="inline" href="mailto:hello@example.com">hello@example.com</a>
+        (replace with your real address). We'll be on YouTube soon.</p>
+
+      <p style="margin-top:18px"><a class="cta-btn" href="../">← Back to the trainer</a></p>
+    </article>
+  </main>
+
+  <footer class="app-footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="../">Trainer</a>
+      <a href="../level/a1/">Levels</a>
+      <a href="../../ru/about/" hreflang="ru">Русский</a>
+    </nav>
+    <p class="footer-note">WordTrainer — a free CEFR (A1–C1) vocabulary trainer.</p>
+  </footer>
+
+  <script src="../../js/theme.js"></script>
+</body>
+</html>

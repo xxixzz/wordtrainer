@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WordTrainer — тренажёр слов / vocabulary trainer (A1–C1)</title>
+  <meta name="description" content="Бесплатный тренажёр английских слов A1–C1. Free English ⇄ Russian vocabulary trainer." />
+  <link rel="canonical" href="https://example.com/" />
+  <link rel="alternate" hreflang="ru" href="https://example.com/ru/" />
+  <link rel="alternate" hreflang="en" href="https://example.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://example.com/ru/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>" />
+  <script>
+    (function () {
+      try {
+        var l = (navigator.language || "ru").toLowerCase();
+        location.replace(l.indexOf("en") === 0 ? "en/" : "ru/");
+      } catch (e) { location.replace("ru/"); }
+    })();
+  </script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #0f172a; color: #f1f5f9; min-height: 100vh; margin: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; text-align: center; padding: 20px; }
+    a { color: #818cf8; font-size: 1.2rem; font-weight: 600; text-decoration: none; padding: 10px 18px;
+      border: 1px solid #334155; border-radius: 12px; }
+    a:hover { border-color: #6366f1; }
+    .row { display: flex; gap: 12px; }
+    h1 { font-size: 1.5rem; }
+  </style>
+</head>
+<body>
+  <h1>📚 WordTrainer</h1>
+  <p>Выберите язык / Choose your language</p>
+  <div class="row">
+    <a href="ru/">Русский</a>
+    <a href="en/">English</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "WordTrainer — тренажёр слов",
+  "short_name": "WordTrainer",
+  "description": "Тренажёр английских слов A1–C1 / English ⇄ Russian vocabulary trainer.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

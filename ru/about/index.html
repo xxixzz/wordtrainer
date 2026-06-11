@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>О проекте — WordTrainer, тренажёр английских слов</title>
+  <meta name="description" content="WordTrainer — бесплатный онлайн-тренажёр английских слов A1–C1. Кто мы, как устроен тренажёр, ответы на частые вопросы и контакты." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/ru/about/" />
+  <link rel="alternate" hreflang="ru" href="https://example.com/ru/about/" />
+  <link rel="alternate" hreflang="en" href="https://example.com/en/about/" />
+  <link rel="alternate" hreflang="x-default" href="https://example.com/ru/about/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="О проекте — WordTrainer" />
+  <meta property="og:description" content="Бесплатный тренажёр английских слов A1–C1. О проекте, FAQ и контакты." />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:url" content="https://example.com/ru/about/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>" />
+
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://example.com/ru/" },
+    { "@type": "ListItem", "position": 2, "name": "О проекте", "item": "https://example.com/ru/about/" }
+  ] }
+  </script>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "Тренажёр бесплатный?", "acceptedAnswer": { "@type": "Answer", "text": "Да, полностью бесплатно и без регистрации." } },
+    { "@type": "Question", "name": "Нужно ли что-то устанавливать?", "acceptedAnswer": { "@type": "Answer", "text": "Нет, тренажёр работает прямо в браузере. При желании его можно установить как приложение (PWA) на телефон." } },
+    { "@type": "Question", "name": "Сколько слов в тренажёре?", "acceptedAnswer": { "@type": "Answer", "text": "Около 4600 английских слов, разбитых по уровням CEFR от A1 до C1." } },
+    { "@type": "Question", "name": "Сохраняется ли прогресс?", "acceptedAnswer": { "@type": "Answer", "text": "Да, статистика и история ответов сохраняются в вашем браузере. Синхронизация между устройствами появится позже." } },
+    { "@type": "Question", "name": "Как узнать свой уровень?", "acceptedAnswer": { "@type": "Answer", "text": "В тренажёре есть адаптивный тест «Узнать уровень»: слова идут от простых к сложным и оценивают ваш уровень за 1–2 минуты." } }
+  ] }
+  </script>
+
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script>
+    (function () { try { var t = localStorage.getItem("wordtrainer_theme"); if (!t) { t = (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ? "light" : "dark"; } document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();
+  </script>
+</head>
+<body>
+  <header class="app-header">
+    <a class="lang-switch" href="../../en/about/" hreflang="en" aria-label="Switch to English">EN</a>
+    <button class="theme-btn" id="theme-btn" type="button" aria-label="Переключить тему">🌙</button>
+    <h1 class="logo">📚 Word<span>Trainer</span></h1>
+    <p class="tagline">Учим английские слова — A1 до C1</p>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+      <a href="../">Главная</a> / О проекте
+    </nav>
+
+    <article class="prose">
+      <h1>О проекте WordTrainer</h1>
+      <p>WordTrainer — это бесплатный онлайн-тренажёр английских слов. Наша цель проста:
+        помочь учить и закреплять лексику маленькими порциями, без скуки и без оплаты.
+        Вы видите слово и выбираете правильный перевод из четырёх вариантов — так
+        запоминание идёт быстрее, чем при простом чтении списков.</p>
+      <p>В тренажёре около 4600 слов, разбитых по уровням <strong>CEFR — от A1 до C1</strong>.
+        Можно учить в двух направлениях (английский → русский и обратно), работать над
+        ошибками, проходить раунды по 10 слов и определять свой уровень адаптивным тестом.</p>
+
+      <h2>Почему так устроено</h2>
+      <p>Мы сознательно сделали тренажёр лёгким и быстрым: он работает прямо в браузере,
+        не требует регистрации, а прогресс сохраняется на вашем устройстве. После первого
+        захода страница открывается даже без интернета.</p>
+
+      <h2>Частые вопросы</h2>
+      <dl class="faq">
+        <dt>Тренажёр бесплатный?</dt>
+        <dd>Да, полностью бесплатно и без регистрации.</dd>
+        <dt>Нужно ли что-то устанавливать?</dt>
+        <dd>Нет, всё работает в браузере. При желании можно «установить» как приложение (PWA) на телефон.</dd>
+        <dt>Сколько слов в тренажёре?</dt>
+        <dd>Около 4600 английских слов по уровням CEFR от A1 до C1.</dd>
+        <dt>Сохраняется ли прогресс?</dt>
+        <dd>Да, статистика и история сохраняются в вашем браузере. Синхронизация между устройствами появится позже.</dd>
+        <dt>Как узнать свой уровень?</dt>
+        <dd>Пройдите адаптивный тест «Узнать уровень» — он оценит ваш уровень за 1–2 минуты.</dd>
+      </dl>
+
+      <h2>Контакты</h2>
+      <p>Вопросы и предложения: <a class="inline" href="mailto:hello@example.com">hello@example.com</a>
+        (замените на ваш реальный адрес). Скоро мы появимся на YouTube.</p>
+
+      <p style="margin-top:18px"><a class="cta-btn" href="../">← К тренажёру</a></p>
+    </article>
+  </main>
+
+  <footer class="app-footer">
+    <nav class="footer-nav" aria-label="Подвал">
+      <a href="../">Тренажёр</a>
+      <a href="../level/a1/">Уровни</a>
+      <a href="../../en/about/" hreflang="en">English</a>
+    </nav>
+    <p class="footer-note">WordTrainer — бесплатный тренажёр английской лексики A1–C1.</p>
+  </footer>
+
+  <script src="../../js/theme.js"></script>
+</body>
+</html>

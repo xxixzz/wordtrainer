@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://example.com/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://example.com/ru/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/about/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/about/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://example.com/ru/level/a1/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/level/a1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/level/a1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/level/a1/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/level/a1/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/level/a1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/level/a1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/level/a1/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/ru/level/a2/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/level/a2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/level/a2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/level/a2/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/level/a2/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/level/a2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/level/a2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/level/a2/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/ru/level/b1/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/level/b1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/level/b1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/level/b1/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/level/b1/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/level/b1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/level/b1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/level/b1/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/ru/level/b2/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/level/b2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/level/b2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/level/b2/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/level/b2/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/level/b2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/level/b2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/level/b2/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/ru/level/c1/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/level/c1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/level/c1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/level/c1/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/level/c1/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://example.com/ru/level/c1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/level/c1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/ru/level/c1/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
