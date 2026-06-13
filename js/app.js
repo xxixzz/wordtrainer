@@ -2,7 +2,7 @@
 (function () {
   "use strict";
 
-  var STORAGE_KEY = "wordtrainer_v2";
+  var STORAGE_KEY = "EnglishTrainer_v2";
   var LEVELS = ["A1", "A2", "B1", "B2", "C1"];
   var ROUND_SIZE = 10;
 
@@ -439,7 +439,7 @@
     var cur = document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
     var next = cur === "light" ? "dark" : "light";
     document.documentElement.setAttribute("data-theme", next);
-    try { localStorage.setItem("wordtrainer_theme", next); } catch (e) {}
+    try { localStorage.setItem("EnglishTrainer_theme", next); } catch (e) {}
     applyThemeIcon();
   });
 

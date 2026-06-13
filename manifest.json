@@ -1,6 +1,6 @@
 {
-  "name": "WordTrainer — тренажёр слов",
-  "short_name": "WordTrainer",
+  "name": "EnglishTrainer — тренажёр слов",
+  "short_name": "EnglishTrainer",
   "description": "Тренажёр английских слов A1–C1 / English ⇄ Russian vocabulary trainer.",
   "start_url": "/",
   "scope": "/",

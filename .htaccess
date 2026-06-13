@@ -1,4 +1,4 @@
-# WordTrainer — оптимизация отдачи статики (Apache, напр. reg.ru)
+# EnglishTrainer — оптимизация отдачи статики (Apache, напр. reg.ru)
 
 # ---- Сжатие (gzip) ----
 <IfModule mod_deflate.c>

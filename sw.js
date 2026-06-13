@@ -1,9 +1,9 @@
-/* WordTrainer Service Worker
+/* EnglishTrainer Service Worker
    Снижает нагрузку на сервер и даёт офлайн-работу:
    - статика (css/js/данные) — cache-first (повторные визиты не бьют по серверу);
    - HTML — network-first (всегда свежая оболочка, с откатом в кэш офлайн).
    При обновлении файлов поднимите версию CACHE, чтобы старый кэш очистился. */
-var CACHE = "wordtrainer-v2";
+var CACHE = "EnglishTrainer-v2";
 var ASSETS = [
   "./", "./ru/", "./en/", "./ru/about/", "./en/about/",
   "./css/style.css", "./js/app.js", "./js/theme.js",
