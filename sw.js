@@ -3,10 +3,10 @@
    - статика (css/js/данные) — cache-first (повторные визиты не бьют по серверу);
    - HTML — network-first (всегда свежая оболочка, с откатом в кэш офлайн).
    При обновлении файлов поднимите версию CACHE, чтобы старый кэш очистился. */
-var CACHE = "EnglishTrainer-v2";
+var CACHE = "EnglishTrainer-v3";
 var ASSETS = [
   "./", "./ru/", "./en/", "./ru/about/", "./en/about/",
-  "./css/style.css", "./js/app.js", "./js/theme.js",
+  "./css/style.css?v=2", "./js/app.js?v=2", "./js/theme.js?v=2",
   "./data/a1.js", "./data/a2.js", "./data/b1.js", "./data/b2.js", "./data/c1.js",
   "./manifest.json"
 ];
