@@ -12,7 +12,7 @@
       promptFrom: "Переведите с английского:",
       promptTo: "Переведите на английский:",
       notEnough: "Недостаточно слов",
-      mistakesEmptyWord: "Ошибок нет 🎉",
+      mistakesEmptyWord: "Ошибок нет",
       mistakesPrompt: "Режим работы над ошибками",
       mistakesEmptyBody: function (lvl) { return "На уровне " + lvl + " нет слов с ошибками. Отвечайте в режиме практики — сюда попадут слова, в которых вы ошиблись."; },
       historyEmpty: "Здесь появятся ваши ответы.",
@@ -23,20 +23,20 @@
       suggestUp: function (t) { return "Отлично получается! Попробуете уровень посложнее — " + t + "?"; },
       suggestDown: function (t) { return "Похоже, тут сложновато. Перейти на уровень полегче — " + t + "?"; },
       tips: [
-        "💡 Отвечайте клавишами 1–4, а Enter или Пробел — следующее слово.",
-        "🔁 Слова, в которых вы ошиблись, попадут в режим «Работа над ошибками».",
-        "↔️ Переключайте EN → RU и RU → EN, чтобы тренировать оба направления.",
-        "🎓 Не знаете свой уровень? Пройдите тест «Узнать уровень».",
-        "🔥 Отвечайте без ошибок — тренажёр предложит уровень посложнее.",
-        "📈 Статистика и история ответов сохраняются в этом браузере.",
-        "⏱️ Достаточно 5 минут в день — главное заниматься регулярно."
+        "Отвечайте клавишами 1–4, а Enter или Пробел — следующее слово.",
+        "Слова, в которых вы ошиблись, попадут в режим «Работа над ошибками».",
+        "Переключайте EN → RU и RU → EN, чтобы тренировать оба направления.",
+        "Не знаете свой уровень? Пройдите тест «Узнать уровень».",
+        "Отвечайте без ошибок — тренажёр предложит уровень посложнее.",
+        "Статистика и история ответов сохраняются в этом браузере.",
+        "Достаточно 5 минут в день — главное заниматься регулярно."
       ]
     },
     en: {
       promptFrom: "Translate from English:",
       promptTo: "Translate into English:",
       notEnough: "Not enough words",
-      mistakesEmptyWord: "No mistakes 🎉",
+      mistakesEmptyWord: "No mistakes",
       mistakesPrompt: "Review-mistakes mode",
       mistakesEmptyBody: function (lvl) { return "No mistakes at level " + lvl + " yet. Practice some words — the ones you get wrong will appear here."; },
       historyEmpty: "Your answers will appear here.",
@@ -47,18 +47,29 @@
       suggestUp: function (t) { return "You're on fire! Try a harder level — " + t + "?"; },
       suggestDown: function (t) { return "Looks tricky. Switch to an easier level — " + t + "?"; },
       tips: [
-        "💡 Answer with keys 1–4; Enter or Space goes to the next word.",
-        "🔁 Words you get wrong are collected in the “Review mistakes” mode.",
-        "↔️ Switch EN → RU and RU → EN to train both directions.",
-        "🎓 Not sure of your level? Take the level test.",
-        "🔥 Answer without mistakes and the trainer will suggest a harder level.",
-        "📈 Your stats and answer history are saved in this browser.",
-        "⏱️ Just 5 minutes a day — consistency is what matters."
+        "Answer with keys 1–4; Enter or Space goes to the next word.",
+        "Words you get wrong are collected in the “Review mistakes” mode.",
+        "Switch EN → RU and RU → EN to train both directions.",
+        "Not sure of your level? Take the level test.",
+        "Answer without mistakes and the trainer will suggest a harder level.",
+        "Your stats and answer history are saved in this browser.",
+        "Just 5 minutes a day — consistency is what matters."
       ]
     }
   };
   var LANG = (document.documentElement.lang === "en") ? "en" : "ru";
   function T(k) { return STRINGS[LANG][k]; }
+
+  // ---- Линейные SVG-иконки (currentColor) ----
+  var ICONS = {
+    check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
+    x: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>',
+    moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>',
+    sun: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+    trophy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>',
+    checkCircle: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 5-5"/></svg>',
+    flame: '<svg class="flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s5 4 5 9a5 5 0 0 1-10 0c0-2 1-3 1-3 0 1 1 2 2 2 0-3 2-5 2-8z"/></svg>'
+  };
 
   var state = {
     level: "A1",
@@ -174,7 +185,7 @@
       var hh = ("0" + time.getHours()).slice(-2) + ":" + ("0" + time.getMinutes()).slice(-2);
       var givenHtml = h.correct ? "" : ' <span class="a wrongans">' + escapeHtml(h.given) + "</span>";
       html += '<li class="history-item ' + (h.correct ? "ok" : "no") + '">' +
-        '<span class="mark">' + (h.correct ? "✅" : "❌") + "</span>" +
+        '<span class="mark">' + (h.correct ? ICONS.check : ICONS.x) + "</span>" +
         '<span class="q">' + escapeHtml(h.q) + "</span>" +
         '<span class="arrow">→</span>' +
         '<span class="a">' + escapeHtml(h.a) + "</span>" + givenHtml +
@@ -236,8 +247,8 @@
     els.summaryCorrect.textContent = correct;
     els.summaryTotal.textContent = total;
     els.summaryAcc.textContent = T("accuracy") + acc + "%";
-    els.summaryStreak.textContent = T("streak") + state.stats.streak + " 🔥";
-    els.summaryEmoji.textContent = acc >= 90 ? "🏆" : acc >= 70 ? "🎉" : acc >= 50 ? "🙂" : "💪";
+    els.summaryStreak.innerHTML = T("streak") + state.stats.streak + " " + ICONS.flame;
+    els.summaryEmoji.innerHTML = acc >= 70 ? ICONS.trophy : ICONS.checkCircle;
     els.summaryTitle.textContent = acc >= 90 ? T("sumGreat") : acc >= 70 ? T("sumGood") : acc >= 50 ? T("sumOk") : T("sumTry");
     els.quiz.hidden = true;
     els.roundProgress.hidden = true;
@@ -433,7 +444,7 @@
   // ---- Тема ----
   function applyThemeIcon() {
     var t = document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
-    els.themeBtn.textContent = t === "light" ? "☀️" : "🌙";
+    els.themeBtn.innerHTML = t === "light" ? ICONS.sun : ICONS.moon;
   }
   els.themeBtn.addEventListener("click", function () {
     var cur = document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";

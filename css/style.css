@@ -409,3 +409,42 @@ body {
 .faq dt { font-weight: 700; margin-top: 16px; }
 .faq dd { color: var(--text-dim); line-height: 1.6; margin: 5px 0 0; }
 @media (max-width: 600px) { .sample-list { grid-template-columns: 1fr; } }
+
+/* ==========================================================================
+   Иконки (единый линейный набор вместо эмодзи) + рефреш
+   ========================================================================== */
+svg { flex-shrink: 0; }
+.logo { display: inline-flex; align-items: center; gap: 9px; }
+.logo .mark { width: 26px; height: 26px; color: var(--accent-hover); }
+.logo span { color: var(--accent-hover); }
+
+.theme-btn svg, .lang-switch svg { width: 18px; height: 18px; }
+.mode-btn svg { width: 17px; height: 17px; }
+.mode-btn { gap: 7px; }
+
+.stat-name { display: inline-flex; align-items: center; gap: 4px; justify-content: center; }
+.stat-name svg { width: 12px; height: 12px; }
+
+.history-item .mark { display: inline-flex; align-items: center; }
+.history-item .mark svg { width: 15px; height: 15px; }
+.history-item.ok .mark { color: var(--correct); }
+.history-item.no .mark { color: var(--wrong); }
+
+.summary-emoji { display: flex; justify-content: center; }
+.summary-emoji svg { width: 58px; height: 58px; color: var(--accent-hover); }
+.summary-line .flame { width: 14px; height: 14px; vertical-align: -2px; color: var(--gold); }
+
+/* Логотип-текст: чуть характернее */
+.logo { font-weight: 800; letter-spacing: -.3px; }
+
+/* ===== Заметная кнопка сброса ===== */
+#reset-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--wrong-soft); color: var(--wrong);
+  border: 1px solid transparent; border-radius: var(--radius-sm);
+  padding: 9px 15px; font-size: .84rem; font-weight: 700;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+#reset-btn svg { width: 15px; height: 15px; }
+#reset-btn:hover { background: var(--wrong); color: #fff; border-color: var(--wrong); }
+.history-head { gap: 10px; }
