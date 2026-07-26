@@ -457,7 +457,7 @@ svg { flex-shrink: 0; }
   .app-header { padding: 14px 52px 2px; }
   .logo { font-size: 1.2rem; }
   .tagline { display: none; }                     /* убираем лишнюю строку */
-  .container { gap: 9px; padding: 10px 12px 8px; }
+  .container { gap: 9px; padding: 24px 12px 8px; }
 
   /* Режимы — компактный ряд иконок (подписи скрыты, функция сохранена) */
   .modes { flex-direction: row; padding: 5px; gap: 5px; }
